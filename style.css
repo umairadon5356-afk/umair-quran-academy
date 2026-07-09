@@ -185,3 +185,30 @@ footer{
     margin:20px 0;
     line-height:2;
 }
+.countries{
+    padding:80px 20px;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+.countries h2{
+    color:#0b6b3a;
+    margin-bottom:30px;
+}
+
+.country-card{
+    display:inline-block;
+    background:white;
+    margin:10px;
+    padding:15px 25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    font-size:18px;
+    transition:.3s;
+}
+
+.country-card:hover{
+    transform:translateY(-5px);
+    background:#0b6b3a;
+    color:white;
+}
