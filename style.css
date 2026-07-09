@@ -139,3 +139,33 @@ footer{
 .whatsapp:hover{
     transform:scale(1.1);
 }
+.courses-section{
+    padding:70px 20px;
+    text-align:center;
+    background:#eef8f1;
+}
+
+.courses-section h2{
+    color:#0b6b3a;
+    margin-bottom:40px;
+}
+
+.course-card{
+    width:280px;
+    display:inline-block;
+    margin:15px;
+    padding:25px;
+    border-radius:15px;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+}
+
+.course-card h3{
+    color:#0b6b3a;
+    margin-bottom:10px;
+}
