@@ -1,7 +1,7 @@
-/* ===========================
+/* ===================================
    UMAIR QURAN ACADEMY
-   STYLE.CSS
-=========================== */
+   STYLE.CSS - PART 1
+=================================== */
 
 *{
     margin:0;
@@ -9,11 +9,15 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',Arial,sans-serif;
     background:#f8f9fa;
-    color:#222;
-    line-height:1.6;
+    color:#333;
+    line-height:1.7;
 }
 
 /* Header */
@@ -22,7 +26,15 @@ header{
     background:#0b6b3a;
     color:#fff;
     text-align:center;
-    padding:25px 15px;
+    padding:30px 20px;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 15px;
 }
 
 header h1{
@@ -38,18 +50,22 @@ header p{
 
 nav{
     background:#084d2a;
-    text-align:center;
-    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:16px;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
 nav a{
-    color:#fff;
+    color:white;
     text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    font-size:16px;
+    font-weight:600;
     transition:.3s;
 }
 
@@ -60,13 +76,19 @@ nav a:hover{
 /* Hero */
 
 .hero{
-    background:linear-gradient(rgba(11,107,58,.75),rgba(11,107,58,.75)),
+    background:
+    linear-gradient(rgba(11,107,58,.75),rgba(11,107,58,.75)),
     url("https://images.unsplash.com/photo-1519817650390-64a93db51149?w=1600");
     background-size:cover;
     background-position:center;
     color:white;
     text-align:center;
     padding:120px 20px;
+}
+
+.hero-content{
+    max-width:850px;
+    margin:auto;
 }
 
 .hero h1{
@@ -76,7 +98,7 @@ nav a:hover{
 
 .hero p{
     font-size:22px;
-    margin-bottom:30px;
+    margin-bottom:35px;
 }
 
 /* Button */
@@ -84,10 +106,10 @@ nav a:hover{
 .btn{
     display:inline-block;
     background:gold;
-    color:#000;
+    color:black;
     text-decoration:none;
     padding:15px 35px;
-    border-radius:40px;
+    border-radius:50px;
     font-weight:bold;
     transition:.3s;
 }
@@ -95,178 +117,311 @@ nav a:hover{
 .btn:hover{
     background:white;
     color:#0b6b3a;
+    transform:translateY(-3px);
 }
 
-/* Features */
+/* Common Section */
 
-.features{
-    padding:70px 20px;
+section{
+    padding:80px 20px;
+}
+
+section h2{
     text-align:center;
-}
-
-.features h2{
     color:#0b6b3a;
     margin-bottom:40px;
+    font-size:34px;
+}/* ===================================
+   FEATURES
+=================================== */
+
+.features{
+    background:#ffffff;
+}
+
+.feature-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
 }
 
 .feature-box{
-    display:inline-block;
-    width:280px;
-    background:white;
-    margin:15px;
-    padding:25px;
+    background:#fff;
+    width:260px;
+    padding:30px 20px;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
 }
 
 .feature-box:hover{
     transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 .feature-box h3{
     color:#0b6b3a;
     margin-bottom:15px;
+    font-size:22px;
 }
 
-/* Courses */
+.feature-box p{
+    color:#555;
+    font-size:15px;
+}
+
+/* ===================================
+   COURSES
+=================================== */
 
 .courses-section{
     background:#eef8f1;
-    padding:70px 20px;
-    text-align:center;
 }
 
-.courses-section h2{
-    color:#0b6b3a;
-    margin-bottom:40px;
+.course-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
 }
 
 .course-card{
-    display:inline-block;
-    width:280px;
-    background:white;
-    margin:15px;
-    padding:25px;
+    background:#fff;
+    width:260px;
+    padding:30px 20px;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
 }
 
 .course-card:hover{
     transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 .course-card h3{
     color:#0b6b3a;
     margin-bottom:15px;
+    font-size:22px;
 }
 
-/* Quran Section */
+.course-card p{
+    color:#555;
+}
+
+/* ===================================
+   QURAN SECTION
+=================================== */
 
 .quran-section{
     background:#0b6b3a;
     color:white;
     text-align:center;
-    padding:80px 20px;
 }
 
 .quran-section h2{
-    margin-bottom:20px;
+    color:white;
 }
 
 .arabic{
-    font-size:38px;
+    font-size:42px;
+    margin:30px 0;
     line-height:2;
-    margin:20px 0;
+    font-weight:bold;
 }
 
-/* Countries */
+/* ===================================
+   COUNTRIES
+=================================== */
 
 .countries{
-    padding:70px 20px;
-    text-align:center;
+    background:#ffffff;
 }
 
-.countries h2{
-    color:#0b6b3a;
-    margin-bottom:40px;
+.country-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
 }
 
 .country-card{
-    display:inline-block;
     background:white;
     padding:15px 25px;
-    margin:10px;
     border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-size:18px;
     transition:.3s;
 }
 
 .country-card:hover{
     background:#0b6b3a;
     color:white;
+    transform:translateY(-5px);
+}/* ===================================
+   TESTIMONIALS
+=================================== */
+
+.testimonials{
+    background:#eef8f1;
 }
 
-/* Form */
+.testimonial-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.testimonial-card{
+    width:320px;
+    background:white;
+    padding:30px 25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.testimonial-card p{
+    margin:20px 0;
+    color:#555;
+}
+
+.testimonial-card h4{
+    color:#0b6b3a;
+}
+
+/* ===================================
+   CALL TO ACTION
+=================================== */
+
+.cta{
+    background:#0b6b3a;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 30px;
+    font-size:18px;
+}
+
+/* ===================================
+   FORM
+=================================== */
 
 form{
-    max-width:500px;
+    max-width:600px;
     margin:auto;
 }
 
 input,
-select{
+select,
+textarea{
     width:100%;
     padding:14px;
-    margin-bottom:15px;
+    margin-bottom:18px;
     border:1px solid #ccc;
     border-radius:8px;
+    font-size:16px;
+    font-family:inherit;
 }
 
 button{
     border:none;
 }
 
-/* WhatsApp */
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background:#084d2a;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ===================================
+   WHATSAPP BUTTON
+=================================== */
 
 .whatsapp{
     position:fixed;
-    right:20px;
     bottom:20px;
+    right:20px;
     width:60px;
     height:60px;
     background:#25D366;
     color:white;
-    border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
     text-decoration:none;
+    border-radius:50%;
     font-size:30px;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
     transition:.3s;
+    z-index:9999;
 }
 
 .whatsapp:hover{
     transform:scale(1.1);
 }
 
-/* Footer */
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
 
-footer{
-    background:#0b6b3a;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-/* Mobile */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 header h1{
-    font-size:30px;
+    font-size:32px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.logo{
+    width:80px;
+    height:80px;
+}
+
+nav{
+    flex-direction:column;
+    gap:12px;
 }
 
 .hero{
@@ -274,27 +429,62 @@ header h1{
 }
 
 .hero h1{
-    font-size:35px;
+    font-size:36px;
 }
 
 .hero p{
     font-size:18px;
 }
 
-nav a{
-    display:block;
-    margin:12px 0;
-}
-
 .feature-box,
-.course-card{
-    width:90%;
+.course-card,
+.testimonial-card{
+    width:100%;
+    max-width:350px;
 }
 
 .country-card{
-    display:block;
-    margin:10px auto;
     width:90%;
+    text-align:center;
+}
+
+section h2{
+    font-size:28px;
+}
+
+.btn{
+    padding:14px 28px;
+}
+
+}
+
+/* ===================================
+   SMALL MOBILE
+=================================== */
+
+@media (max-width:480px){
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+}
+
+.whatsapp{
+    width:55px;
+    height:55px;
+    font-size:26px;
 }
 
 }
