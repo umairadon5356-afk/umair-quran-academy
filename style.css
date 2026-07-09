@@ -1,101 +1,107 @@
+/* ===========================
+   UMAIR QURAN ACADEMY
+   STYLE.CSS
+=========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
 }
 
 body{
+    font-family:Arial, Helvetica, sans-serif;
     background:#f8f9fa;
     color:#222;
+    line-height:1.6;
 }
+
+/* Header */
 
 header{
     background:#0b6b3a;
-    color:white;
-    padding:20px;
+    color:#fff;
     text-align:center;
+    padding:25px 15px;
 }
 
-nav{
-    background:#084d2a;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-}
-
-.hero{
-    text-align:center;
-    padding:80px 20px;
-    background:#e9f8ef;
-}
-
-.hero h1{
+header h1{
     font-size:42px;
-    color:#0b6b3a;
+    margin-bottom:10px;
 }
 
-.hero p{
-    margin-top:15px;
+header p{
     font-size:18px;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#0b6b3a;
-    color:white;
-    padding:12px 25px;
-    border-radius:8px;
-    text-decoration:none;
+/* Navigation */
+
+nav{
+    background:#084d2a;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-footer{
-    background:#0b6b3a;
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(rgba(11,107,58,.75),rgba(11,107,58,.75)),
+    url("https://images.unsplash.com/photo-1519817650390-64a93db51149?w=1600");
+    background-size:cover;
+    background-position:center;
     color:white;
     text-align:center;
-    padding:20px;
-    margin-top:50px;
-}
-.hero{
-    background: linear-gradient(rgba(11,107,58,0.8), rgba(11,107,58,0.8)),
-    url("https://images.unsplash.com/photo-1519817650390-64a93db51149?w=1600");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
+    padding:120px 20px;
 }
 
 .hero h1{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size:55px;
+    margin-bottom:20px;
 }
 
 .hero p{
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size:22px;
+    margin-bottom:30px;
 }
 
+/* Button */
+
 .btn{
-    background: gold;
-    color: black;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-radius: 50px;
+    display:inline-block;
+    background:gold;
+    color:#000;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .btn:hover{
-    backg.features{
+    background:white;
+    color:#0b6b3a;
+}
+
+/* Features */
+
+.features{
     padding:70px 20px;
     text-align:center;
-    background:#ffffff;
 }
 
 .features h2{
@@ -104,45 +110,31 @@ footer{
 }
 
 .feature-box{
-    width:280px;
     display:inline-block;
+    width:280px;
+    background:white;
     margin:15px;
     padding:25px;
     border-radius:15px;
-    background:#f5f5f5;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.feature-box:hover{
+    transform:translateY(-8px);
 }
 
 .feature-box h3{
-    margin-bottom:10px;
     color:#0b6b3a;
-}round: white;
-}
-.whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:30px;
-    text-decoration:none;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-    z-index:999;
+    margin-bottom:15px;
 }
 
-.whatsapp:hover{
-    transform:scale(1.1);
-}
+/* Courses */
+
 .courses-section{
+    background:#eef8f1;
     padding:70px 20px;
     text-align:center;
-    background:#eef8f1;
 }
 
 .courses-section h2{
@@ -151,12 +143,12 @@ footer{
 }
 
 .course-card{
-    width:280px;
     display:inline-block;
+    width:280px;
+    background:white;
     margin:15px;
     padding:25px;
     border-radius:15px;
-    background:#fff;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
     transition:.3s;
 }
@@ -167,8 +159,11 @@ footer{
 
 .course-card h3{
     color:#0b6b3a;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
+
+/* Quran Section */
+
 .quran-section{
     background:#0b6b3a;
     color:white;
@@ -181,37 +176,40 @@ footer{
 }
 
 .arabic{
-    font-size:35px;
-    margin:20px 0;
+    font-size:38px;
     line-height:2;
+    margin:20px 0;
 }
+
+/* Countries */
+
 .countries{
-    padding:80px 20px;
+    padding:70px 20px;
     text-align:center;
-    background:#f8f9fa;
 }
 
 .countries h2{
     color:#0b6b3a;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 
 .country-card{
     display:inline-block;
     background:white;
-    margin:10px;
     padding:15px 25px;
+    margin:10px;
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
-    font-size:18px;
     transition:.3s;
 }
 
 .country-card:hover{
-    transform:translateY(-5px);
     background:#0b6b3a;
     color:white;
 }
+
+/* Form */
+
 form{
     max-width:500px;
     margin:auto;
@@ -220,13 +218,83 @@ form{
 input,
 select{
     width:100%;
-    padding:12px;
+    padding:14px;
+    margin-bottom:15px;
     border:1px solid #ccc;
     border-radius:8px;
-    font-size:16px;
 }
 
 button{
     border:none;
-    cursor:pointer;
+}
+
+/* WhatsApp */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* Footer */
+
+footer{
+    background:#0b6b3a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+    font-size:30px;
+}
+
+.hero{
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav a{
+    display:block;
+    margin:12px 0;
+}
+
+.feature-box,
+.course-card{
+    width:90%;
+}
+
+.country-card{
+    display:block;
+    margin:10px auto;
+    width:90%;
+}
+
 }
